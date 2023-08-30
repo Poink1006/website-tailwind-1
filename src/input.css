@@ -15,3 +15,72 @@
     font-size: 13px;
   }
 }
+@layer components {
+  .container {
+    @apply bg-cover bg-center w-[100vw] h-screen px-[8%] box-border -z-50;
+    background-image: 
+      url(/img/background.png), 
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-blend-mode: overlay;
+  }
+
+  .navbar{
+    @apply h-[12%] flex items-center
+  }
+
+  .logo {
+    @apply w-[50px] cursor-pointer
+  }
+
+  .nav-space {
+    @apply flex-1 text-right
+  }
+
+  .menu-item {
+    @apply w-[30px] cursor-pointer ml-10;
+ 
+  }
+
+  .row {
+    @apply flex h-[88%] place-content-center items-center
+  }
+
+  .col1 {
+    @apply  basis-1/2
+  }
+
+  .col2 {
+    @apply  grid grid-cols-2
+  }
+
+  .btn-explore {
+    @apply w-44 py-3 bg-white text-black mt-7 rounded-full outline-none border-none
+  }
+
+  .card {
+    @apply w-48 h-56 bg-white inline-block rounded-xl box-border cursor-pointer px-6 py-4  mx-4 my-3 bg-center bg-cover transition-transform
+  }
+  .card:hover {
+    @apply -translate-y-2
+  }
+  
+
+  .card1 {
+    background-image: url(/img/pic-1.png);
+    ;
+  }
+
+  .card2 {
+    background-image: url(/img/pic-2.png);
+  }
+  
+  .card3 {
+    background-image: url(/img/pic-3.png);
+  }
+  
+  .card4 {
+    background-image: url(/img/pic-4.png);
+  }
+  
+
+}

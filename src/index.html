@@ -12,25 +12,54 @@
     />
   </head>
   <body>
-    <div
-      class="font-roboto w-full h-screen bg-center bg-cover px-[8%] box-border"
-      style="background-image: url('/img/background.png')"
-    >
+    <div class="container">
       <!-- navbar -->
-      <div class="h-[12%] flex items-center">
-        <img src="/img/logo.png" alt="logo" class="w-[50px] cursor-pointer" />
-        <nav class="flex-1 text-right">
+      <div class="navbar">
+        <img src="/img/logo.png" alt="logo" class="logo" />
+        <nav class="nav-space">
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">REGION</a></li>
             <li><a href="">ABOUT</a></li>
           </ul>
         </nav>
-        <img
-          src="/img/menu.png"
-          alt="menu"
-          class="w-[30px] cursor-pointer ml-5"
-        />
+        <img src="/img/menu.png" alt="menu" class="menu-item" />
+      </div>
+      <div class="row z-40">
+        <div class="col1 text-white">
+          <h1 class="text-[6rem] font-bold">Sahara</h1>
+          <p class="leading-6 text-[1rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button type="button" class="btn-explore">Explore</button>
+        </div>
+        <div class="col2 ml-20">
+          <div class="card card1 text-white text-[0.8rem]">
+            <h5 class="text-black font-bold drop-shadow-md">Western Desert</h5>
+            <p class="drop-shadow-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="card card2 text-white text-[0.8rem]">
+            <h5 class="text-black font-bold drop-shadow-md">Ai Bagawat</h5>
+            <p class="drop-shadow-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="card card3 text-white text-[0.8rem]">
+            <h5 class="text-black font-bold drop-shadow-md">Pyramid of Giza</h5>
+            <p class="drop-shadow-2xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="card card4 text-white text-[0.8rem]">
+            <h5 class="text-black font-bold drop-shadow-md">Kalahari Desert</h5>
+            <p class="drop-shadow-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
